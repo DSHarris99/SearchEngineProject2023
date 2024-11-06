@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Engine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding-top: 100px;
+            font-size: 150%;
+        }
+        .container {
+            display: inline-block;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            width: 450px;
+            height: 45px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 100%;
+        }
+        input[type="submit"] {
+            height: 50px;
+            padding: 5px 25px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0069d9;
+        }
+        .creator {
+            margin-top: -30px; /* Reduced margin to bring it closer to the title */
+            font-size: 70%;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Search Engine</h1>
+        <div class="creator">made by Devin Harris</div>
+        <form action="search.php" method="post">
+            <input type="text" name="searchQuery" placeholder="Enter search terms">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</body>
+</html>
